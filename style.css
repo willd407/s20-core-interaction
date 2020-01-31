@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(#00223E,#FFA17F);
+  position: absolute;
+}
+
+p {
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 3vw;
+  color: #fff;
+  margin-top: 40vh;
+  margin-left: 40vw;
+  margin-right: auto;
+  position: absolute;
+  animation-name: fadein;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+
+}
+
+.about {
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 1.25vw;
+  color: #fff;
+  margin-top: 50vh;
+  margin-left: 46vw;
+  margin-right: auto;
+  position: absolute;
+  animation-name: fadein;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  animation-fill-mode: backwards;
+}
+
+
+.leaf1 {
+  width: 1000px;
+  position: absolute;
+  margin-left: 60vw;
+  margin-top: 30vh;
+  transform: rotate(40deg);
+  animation-name: fadeintwo;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  animation-fill-mode: backwards;
+  transition-duration: 4s;
+  transition-timing-function: ease-in-out
+  z-index:2;
+
+}
+.leaf1:hover {
+  transform: translate(350px,0);
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-timing-function: ease-in-out;
+  z-index:2;
+
+}
+
+.leaf2 {
+  width: 850px;
+  position: absolute;
+  margin-left:-400px;
+  transform: rotate(-40deg);
+  animation-name: fadeintwo;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  animation-fill-mode: backwards;
+  transition-duration: 4s;
+  transition-timing-function: ease-in-out
+  z-index:2;
+} 
+
+
+.leaf2:hover {
+  transform: translate(-350px,-100px);
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-timing-function: ease-in-out;
+  z-index:2;
+
+}
+
+.os {
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 3vw;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  animation-name: fadein;
+  animation-delay: 6s;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fadein { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+
+@keyframes fadeintwo { 
+    0% { 
+        opacity: 0; 
+    } 
+    80% { 
+        opacity: 80%; 
+     } 
+}
+
