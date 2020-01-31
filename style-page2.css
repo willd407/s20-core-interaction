@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(#00223E,#FFA17F);
+  position: absolute;
+}
+
+p {
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 3vw;
+  color: #fff;
+  margin-top: 40vh;
+  margin-left: 40vw;
+  margin-right: auto;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.aboutp {
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 1.5vw;
+  color: #fff;
+  margin-top: 35vh;
+  margin-left: 350px;
+  position: absolute;
+  z-index: 3;
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+  text-align: center;
+
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: solid 3px #fff;
+  z-index: 4;
+  position: absolute;
+  margin-top: 50vh;
+  margin-left: 850px;
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+  text-align: center;
+}
+
+.circle hover {
+  
+}
+
+.about {
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 1.25vw;
+  color: #fff;
+  margin-top: 50vh;
+  margin-left: 46vw;
+  margin-right: auto;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+
+.leaf1 {
+  width: 1000px;
+  position: absolute;
+  margin-left: 60vw;
+  margin-top: 30vh;
+  transform: rotate(40deg);
+  z-index:2;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+/*.leaf1:hover {
+  transform: translate(350px,0);
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-timing-function: ease-in-out;
+  z-index:2;
+
+}*/
+
+.leaf2 {
+  width: 850px;
+  position: absolute;
+  margin-left:-400px;
+  transform: rotate(-40deg);
+  z-index:2;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+} 
+
+
+/*.leaf2:hover {
+  transform: translate(-350px,-100px);
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-timing-function: ease-in-out;
+  z-index:2;
+
+}
+
+.os {
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 3vw;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  animation-name: fadein;
+  animation-delay: 6s;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+}
+*/
+@keyframes fadein { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+
+@keyframes fadeintwo { 
+    0% { 
+        opacity: 0; 
+    } 
+    80% { 
+        opacity: 80%; 
+     } 
+}
+
