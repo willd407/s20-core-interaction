@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width:100vw;
+  background-color: #000;
+
+}
+
+body * {
+  position: absolute;
+  transform-style: preserve-3d;
+
+}
+
+.card1 {
+
+  width: 400px;
+  height: 700px;
+  background-color: #000;
+  margin: -.5*300px (-.5*200);
+  backface-visibility: visible;
+  animation: rot 14s linear infinite;
+  animation-delay: 1s;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #C9283E;
+  color: #000;
+  z-index: 2;
+  left: 100px;
+  top: 125px;
+  
+}
+
+.card2 {
+
+  width: 400px;
+  height: 700px;
+  background-color: #000;
+  margin: -.5*300px (-.5*200);
+  backface-visibility: visible;
+  animation: rot 8s linear infinite;
+  animation-delay: 1.5s;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150px;
+  color: #000;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #C9283E;
+  left: 600px;
+  top: 125px;
+  z-index: 2;
+  
+
+
+}
+.card3 {
+
+  width: 400px;
+  height: 700px;
+  background-color:#000;
+  margin: -.5*300px (-.5*200);
+  backface-visibility: visible;
+  animation: rot 15s linear infinite;
+  animation-delay: 2s;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150px;
+  color: #000;
+  left: 1100px;
+  top: 125px;
+  z-index: 2;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #C9283E;
+
+
+}
+
+.card6 {
+
+  width: 400px;
+  height: 700px;
+  background-color: #000;
+  backface-visibility: visible;
+  animation: rot 7s linear infinite;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 110px;
+  animation-delay: 1s;
+  color:  #000;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #C9283E;
+  z-index: 1;
+  left: 100px;
+  top: 125px;
+
+}
+
+.card5 {
+
+  width: 400px;
+  height: 700px;
+  background-color: #000;
+  margin: -.5*300px (-.5*200);
+  backface-visibility: visible;
+  animation: rot 14s linear infinite;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 125px;
+  animation-delay: 1.5s;
+  color: white;
+  left: 600px;
+  top: 125px;
+  z-index: 1;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #C9283E;
+  color: #000;
+}
+
+.card4 {
+ 
+  width: 400px;
+  height: 700px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #C9283E;
+  background-color: #000;
+  margin: -.5*300px (-.5*200);
+  backface-visibility: visible;
+  animation: rot 11s linear infinite;
+  animation-delay: 2s;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 125px;
+  top: 125px;
+  color: #000;
+  left: 1100px;
+  z-index: 1;
+  text-transform: uppercase;
+
+}
+
+
+span {
+ top: 300px;
+  transform: rotate(-90deg);
+}
+
+@keyframes rot {
+
+    50% { transform: rotateX(1turn) rotateY(0turn); }
+    50% { transform: rotateX(1turn) rotateY(1turn); }
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
