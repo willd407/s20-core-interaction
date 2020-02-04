@@ -4,16 +4,20 @@ body {
   overflow: hidden;
 }
 
+html {
+  font-size: 2vw;
+}
+
 .wrapper {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(#00223E,#FFA17F);
-  position: absolute;
+  background: linear-gradient(180deg, #00223e, #ffa17f);
+  -webkit-animation: AnimationName 31s ease infinite;
 }
 
 p {
   font-family:'Didact Gothic', sans-serif;
-  font-size: 3vw;
+  font-size: 1.5rem;
   color: #fff;
   margin-top: 40vh;
   margin-left: 40vw;
@@ -29,7 +33,7 @@ p {
 
 .about {
   font-family:'Didact Gothic', sans-serif;
-  font-size: 1.25vw;
+  font-size: .75rem;
   color: #fff;
   margin-top: 50vh;
   margin-left: 46vw;
@@ -44,7 +48,7 @@ p {
 
 
 .leaf1 {
-  width: 1000px;
+  width: 40rem;
   position: absolute;
   margin-left: 60vw;
   margin-top: 30vh;
@@ -57,7 +61,6 @@ p {
   transition-duration: 4s;
   transition-timing-function: ease-in-out
   z-index:2;
-
 }
 .leaf1:hover {
   transform: translate(350px,0);
@@ -69,7 +72,7 @@ p {
 }
 
 .leaf2 {
-  width: 850px;
+  width: 29rem;
   position: absolute;
   margin-left:-400px;
   transform: rotate(-40deg);
@@ -95,12 +98,27 @@ p {
 
 .os {
   font-family:'Didact Gothic', sans-serif;
-  font-size: 3vw;
+  font-size: 1.5rem;
   color: #fff;
   position: absolute;
   z-index: 3;
-  margin-top: 10vh;
-  margin-left: 10vw;
+  margin-top: 12vh;
+  margin-left: 15vw;
+  animation-name: fadein;
+  animation-delay: 6s;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+}
+
+.tt {
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  margin-top: 82vh;
+  margin-left: 85vw;
   animation-name: fadein;
   animation-delay: 6s;
   animation-iteration-count: 1;
@@ -125,4 +143,12 @@ p {
         opacity: 80%; 
      } 
 }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+
+  }
+
 
