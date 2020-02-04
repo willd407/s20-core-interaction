@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width:100vw;
+  background-color: #000;
+}
+
+
+::selection {
+  background: #C9283E; 
+}
+
+.cards {
+
+  width:200px;
+  height: 300px;
+  -webkit-animation: fadeinout 8s linear forwards infinite;
+  display: inline-block;
+  margin-left: 40vw;
+  margin-top: 20vh;
+  padding: 15px;
+  margin-bottom: 50vh;
+}
+
+.wrapper {
+  
+}
+
+#one {
+
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(-45deg, #C9283E, #000, #C9283E);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  border: solid 1px #C9283E;
+  animation: animate 8s linear forwards infinite;
+  font-size: 30px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0)
+}
+
+#two {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  color: #000;
+  border-left:solid .5px #C9283E; 
+  border-right:solid .5px #C9283E;
+  height: 5000px;
+  -webkit-animation: fadeinout 10s linear forwards infinite;
+
+}
+
+#three {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 200px;
+  width: 100vw;
+  padding-top: 4vw;
+  margin-left: 0;
+  text-align: center;
+  color: #C9283E;
+  border:none;
+  -webkit-animation: fadeinout 6s linear forwards infinite;
+  opacity: 30%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  
+}
+
+#four {
+  background: linear-gradient(90deg, #000, #C9283E, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 15s linear forwards infinite;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  width: 100vw;
+  text-align: center;
+  margin-left: 0;
+  color: #000;
+  border:none;
+  opacity: 20%;
+
+}
+
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
