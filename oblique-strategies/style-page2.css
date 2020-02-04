@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.groupi {
+
+background-color: #F0433A;
+margin-top: 500px;
+position: absolute;
+height: 1px;
+width: 100vw;
+animation-name: linegrow;
+animation-delay: 3s;
+animation-duration: 3s;
+animation-fill-mode: backwards;
+}
+
+
+.groupeleven {
+
+background-color: #F0433A;
+margin-top: 375px;
+position: absolute;
+height: 1px;
+width: 100vw;
+animation-name: linegrow;
+animation-delay: 3s;
+animation-duration: 3s;
+animation-fill-mode: backwards;
+
+}
+
+.wrapper {
+
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.text {
+
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.frame {
+
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  border: solid 1px #820333;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 400px;
+  color: #fff;
+  z-index: 100;
+  /*overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 8s linear forwards;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);*/
+
+}
+
+span {
+  overflow: hidden;
+  background: linear-gradient(90deg, #820333, #C9283E, #820333);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s linear infinite forwards;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+}
+@keyframes linegrow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
