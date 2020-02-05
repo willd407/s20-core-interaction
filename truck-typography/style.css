@@ -1,0 +1,117 @@
+html, body {
+
+  margin: 0;
+  padding: 0;
+  font-size: 2vw;
+}
+
+
+.truck {
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#f7dc67;
+  height: 25rem;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ca302b;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#sub {
+  font-size: 1.5rem;
+}
+#sub2 {
+  font-size:.75rem;
+  padding: .5rem;
+  font-family: 'Lobster', cursive;
+  color: #000;
+  text-transform: none;
+  letter-spacing: .02rem;
+}
+
+.block {
+  height: 7.5rem;
+  width: 15%;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 1;
+}
+#left {
+  border: solid 5px #000;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem; 
+  margin-left: 5rem;
+  margin-right: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  font-size: .625rem;
+  padding-top: .1rem;
+  text-align: center;
+}
+
+#middle {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 2rem;
+  margin-left: 3.5rem;
+  border: none;
+  width: 20rem;
+  text-transform: uppercase;
+}
+
+.red {
+
+  color:#ca302b;
+}
+
+#right {
+
+  border:none;
+}
+
+#righttwo {
+border: none;
+font-family: 'Roboto', sans-serif;
+font-size: .825rem;
+text-transform: uppercase;
+z-index: 1
+}
+
+.cow { 
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  height: 8rem;
+  width: 13rem;
+  border:solid .15rem #fff;
+  outline: solid .15rem #ca302b;
+}
+
+.statue {
+
+} 
+
+.shield {
+font-family: 'Roboto', sans-serif;
+font-size: .65rem;
+text-transform: uppercase;
+z-index: 2;
+position: absolute;
+margin-left: -5.3rem;
+margin-top: 2.1rem;
+color: #fff;
+
+}
+
+.red {
+  color:#ca302b; 
+}
