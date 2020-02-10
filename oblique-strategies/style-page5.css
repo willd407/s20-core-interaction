@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width:100%;
+  background-color: #000;
+  
+}
+
+.wrapper {
+perspective: 100px;
+-webkit-animation: fadeinout 6s linear backwards;
+}
+
+.square {
+width: 100px;
+height: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 40vh;
+border: 1px solid #C9283E;
+animation-duration: 3s;
+animation-iteration-count:1;
+animation-fill-mode: forwards;
+animation-delay: 6s;
+transform: rotateX(45deg);
+animation-name: small-rectangle-to-large;
+overflow: hidden;
+color: #C9283E;
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+text-align: center;
+}
+
+a:link {
+color: #C9283E;
+opacity: 70%;
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+text-align: center;
+text-decoration: none;
+}
+
+a:active {
+color: #C9283E;
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+text-align: center;
+text-decoration: none;
+opacity: 70%;
+}
+
+a:hover {
+color: #C9283E;
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+text-align: center;
+text-decoration: none;
+opacity: 70%;
+}
+
+a:visited {
+color: #C9283E;
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+text-decoration: none;
+text-align: center;
+opacity: 70%;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@-webkit-keyframes small-rectangle-to-large {
+    100% {
+        -webkit-transform: scale(1) rotate(180deg);
+        width: 1000px;
+        height: 800px;
+        margin-top: 10vh;
+        font-size: 150px;
+              
+    }
+
+}
