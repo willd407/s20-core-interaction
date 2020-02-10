@@ -24,7 +24,7 @@ body {
 }
 
 .wrapper {
-  
+
 }
 
 #one {
@@ -36,6 +36,7 @@ body {
   border: solid 1px #C9283E;
   animation: animate 8s linear forwards infinite;
   font-size: 30px;
+  margin-bottom: 2000px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0)
 }
@@ -48,6 +49,7 @@ body {
   border-right:solid .5px #C9283E;
   height: 5000px;
   -webkit-animation: fadeinout 10s linear forwards infinite;
+  margin-bottom: 1900px;
 
 }
 
@@ -78,9 +80,25 @@ body {
   width: 100vw;
   text-align: center;
   margin-left: 0;
+  margin-top: 2000px;
+  margin-bottom: 1900px;
   color: #000;
   border:none;
   opacity: 20%;
+
+}
+
+.halfcircle {
+  width: 200px;
+  height: 100px; 
+  background-color: none;
+  border-top-left-radius: 110px;  
+  border-top-right-radius: 110px; 
+  border: 1px solid #C9283E;
+  border-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  filter: blur(1px);
 
 }
 
