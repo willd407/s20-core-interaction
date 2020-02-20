@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+body {
+  background-image: linear-gradient(#2BC0E4,#EAECC6);
+}
+
+.leaves {
+  margin-top: 50vh;
+  z-index: 100;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#trunk {
+  margin-top: 0vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 3.35rem;
+  height: 3rem;
+  background-color: rgb(112,93,70);
+  z-index: 1;
+  text-align: center;
+}
+
+.island {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vw;
+  height: 15vh;
+  border-radius: 15vw 15vw 0 0;
+  background-color: #EDC9AF;
+  z-index: 50;
+}
+
+.ocean {
+  width: 100vw;
+  height: 10vh;
+  background-color: #79CDCD; 
+  position: absolute;
+  z-index: 25;
+}
