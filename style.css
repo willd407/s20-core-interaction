@@ -111,6 +111,21 @@ p {
   animation-fill-mode: backwards;
 }
 
+.pp {
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  margin-top: 20vh;
+  margin-left: 10vw;
+  animation-name: fadein;
+  animation-delay: 6s;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+}
+
 .tt {
   font-family:'Didact Gothic', sans-serif;
   font-size: 1.5rem;
@@ -118,7 +133,7 @@ p {
   position: absolute;
   z-index: 3;
   margin-top: 82vh;
-  margin-left: 85vw;
+  margin-left: 75vw;
   animation-name: fadein;
   animation-delay: 6s;
   animation-iteration-count: 1;
