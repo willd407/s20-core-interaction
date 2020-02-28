@@ -6,8 +6,9 @@ html, body {
 
 body {
   width: 100%;
-  height: 100%;
-  background-image: linear-gradient(#f05053,#e1eec3);
+  height: 100vh;
+  background-color: #f05053;
+
 }
 
 #one {
@@ -54,25 +55,17 @@ body {
   background-color: #fff;
   width: 2rem;
   height: 2rem;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 50%;
-  box-shadow:
-  inset 0 0 50px #fff,
-  inset 20px 0 80px #fff,
-  inset -20px 0 80px #fff,
-  inset 20px 0 300px #fff,
-  inset -20px 0 300px #fff,
-  0 0 50px #fff,
-  -10px 0 80px #fff,
-  10px 0 80px #fff;
+  display: inline-block;
+  display: none;
+  
 }
 
 
 .hands {
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  display: none;
   height: 5rem;
   width: 5rem;
   padding: 1rem;
@@ -147,10 +140,12 @@ body {
   }
   #nobreak {
     visibility: hidden;
+    display: none;
   }
 
   #breakone {
     visibility: hidden;
+    display: none;
   }
 
   .figure {
