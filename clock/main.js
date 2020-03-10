@@ -8,7 +8,15 @@ var secondsTenth = document.getElementById('ten')
 var minutesTenth = document.getElementById('eight')
 var hoursTenth = document.getElementById('six')
 
-// Hundr
+// js variables 
+var counter = 0;
+var firstRandomNumber = Math.round(Math.random()*9);
+var secondRandomNumber = Math.round(Math.random()*9);
+var thirdRandomNumber = Math.round(Math.random()*9);
+var fourthRandomNumber = Math.round(Math.random()*9);
+
+
+// Hundredth
 function timeUnit(output, seconds){
 
  
@@ -47,15 +55,92 @@ function timeUnit(output, seconds){
 function Clock(){
 
   var currentDate = new Date;
+  var hourNumbers = currentDate.getHours();
+  var minuteNumbers = currentDate.getMinutes();
+  
+  if (counter < 30) {
 
-  timeUnit(currentDate.getHours(), hours)
-  timeUnit(currentDate.getMinutes(), minutes)
+    hourNumbers = firstRandomNumber;
+    minuteNumbers = thirdRandomNumber;
+  } 
+  // do not need else; unless want two options
+  timeUnit(hourNumbers, hours)
+  timeUnit(minuteNumbers, minutes)
   timeUnit(currentDate.getSeconds(), seconds)
 
 }
 
-// mouse inactive
-// idle mouse
+// mouse inactive/idle mouse
+ 
+ onInactive(3000, function () {
+    document.getElementById('zero').classList.add('fadeTwo');
+    document.getElementById('one').classList.add('fadeFour');
+    document.getElementById('two').classList.add('fade');
+    document.getElementById('three').classList.add('fadeOne');
+    document.getElementById('four').classList.add('fadeFive');
+    document.getElementById('five').classList.add('fadeThree');
+
+    document.getElementById('twelve').classList.add('fadeThree');
+    document.getElementById('thirteen').classList.add('fade');
+    document.getElementById('fourteen').classList.add('fadeOne');
+    document.getElementById('fifteen').classList.add('fadeFive');
+    document.getElementById('sixteen').classList.add('fadeTwo');
+    document.getElementById('seventeen').classList.add('fadeFour');
+
+    function counterFunction(){
+
+      counter = counter + 1; 
+      console.log(counter)
+
+      document.onmousemove = document.mousedown = document.mouseup = document.onkeydown = document.onkeyup = document.focus = function () {
+        if(counter === 31){
+           clearInterval(timerID);
+        }  
+        location.reload();
+        console.log('reload');
+      }
+    };
+      
+     
+    
+    timerID = setInterval(counterFunction, 1000)
+
+   
+
+});
+
+function onInactive(ms, cb) {
+
+    var wait = setTimeout(cb, ms);
+
+    document.onmousemove = document.mousedown = document.mouseup = document.onkeydown = document.onkeyup = document.focus = function () {
+        clearTimeout(wait);
+        wait = setTimeout(cb, ms);
+
+    };
+}
+
+// mouse active 
+
+
+ function reset(){
+    document.getElementById('zero').classList.remove('fadeTwo');
+    document.getElementById('one').classList.remove('fadeFour');
+    document.getElementById('two').classList.remove('fade');
+    document.getElementById('three').classList.remove('fadeOne');
+    document.getElementById('four').classList.remove('fadeFive');
+    document.getElementById('five').classList.remove('fadeThree');
+
+    document.getElementById('twelve').classList.remove('fadeThree');
+    document.getElementById('thirteen').classList.remove('fade');
+    document.getElementById('fourteen').classList.remove('fadeOne');
+    document.getElementById('fifteen').classList.remove('fadeFive');
+    document.getElementById('sixteen').classList.remove('fadeTwo');
+    document.getElementById('seventeen').classList.remove('fadeFour');
+
+
+
+    }
 
 // Tenth of Time
 
@@ -97,26 +182,33 @@ function timeUnitTwo(outputTwo, secondsTenth){
 function ClockTwo(){
 
   var currentDate = new Date;
+  var hoursNumbersTenth = currentDate.getHours();
+  var minutesNumbersTenth = currentDate.getMinutes();
 
-  timeUnitTwo(currentDate.getHours(), hoursTenth)
-  timeUnitTwo(currentDate.getMinutes(), minutesTenth)
+  if(counter < 30){
+
+    hoursNumbersTenth = secondRandomNumber;
+    minutesNumbersTenth = fourthRandomNumber;
+    timeUnit(hoursNumbersTenth, hoursTenth)
+    timeUnit(minutesNumbersTenth, minutesTenth)
+  }else{
+    timeUnitTwo(hoursNumbersTenth, hoursTenth)
+    timeUnitTwo(minutesNumbersTenth, minutesTenth)
+
+  }
+
   timeUnitTwo(currentDate.getSeconds(), secondsTenth)
 
 }
 
-// timer 
+// counter 
 
-//var timeoutInMiliseconds = 60000;
-//var timeoutId; 
+var minuteCounter = 0;
+var hourCounter = 0;
+
+
  
-//function startTimer() { 
-    // window.setTimeout returns an Id that can be used to start and stop a timer
-    //timeoutId = window.setTimeout(doInactive, timeoutInMiliseconds)
-//}
- 
-//function doInactive() {
-    //document.getElementById('zero')
-//}
+
 
 setInterval(Clock, 1000)
 setInterval(ClockTwo, 1000)
