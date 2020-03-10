@@ -22,6 +22,9 @@ body {
 	font-style: normal;
 	font-size: 7rem;
 	color: black;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 3s liner;
 
 	margin: auto;
   cursor: default;
@@ -128,11 +131,51 @@ body {
   }
 }
 
+.fade {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
 
+.fadeOne {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 2s 2s, opacity 2s linear;
+  transition-delay: 5s;
+}
 
+.fadeTwo {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 2s 2s, opacity 2s linear;
+  transition-delay: 10s;
+}
 
+.fadeThree {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 2s 2s, opacity 2s linear;
+  transition-delay: 15s;
+}
 
+.fadeFour {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 2s 2s, opacity 2s linear;
+  transition-delay: 20s;
+}
 
+.fadeFive {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 2s 2s, opacity 2s linear;
+  transition-delay: 25s;
+}
+
+.visible{
+  visibility: visible;
+  opacity: 1;
+}
 
 @media only screen 
   and (min-device-width: 375px) 
