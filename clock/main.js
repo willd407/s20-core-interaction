@@ -95,8 +95,9 @@ function Clock(){
       document.onmousemove = document.mousedown = document.mouseup = document.onkeydown = document.onkeyup = document.focus = function () {
         if(counter === 31){
            clearInterval(timerID);
-        }  
-        location.reload();
+        } 
+        if (counter <=31) {
+        location.reload();}
         console.log('reload');
       }
     };
